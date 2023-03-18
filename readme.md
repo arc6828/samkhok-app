@@ -50,9 +50,27 @@ npm install react-native-paper
 npx expo install react-native-webview
 ```
 ## Deployment on App Store and Google Play Store
+### Tutorial
 - App Store : https://youtu.be/LE4Mgkrf7Sk
 - Google Play Store : https://youtu.be/oBWBDaqNuws 
 
+### Deployment Dependencies
+```bash
+npm install --global eas-cli
+```
+
+### Build
+```bash
+eas login
+eas whoami
+eas build:configure
+eas build --platform android
+
+### Privacy 
+- Privacy Generator
+https://app-privacy-policy-generator.firebaseapp.com/
+
+```
 ## Reference
 - https://expo.dev
 - https://reactnavigation.org 

@@ -2,29 +2,37 @@
   "expo": {
     "name": "samkhok",
     "slug": "samkhok",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "version": "1.0.2",
+    "icon": "./assets/images/Samkhok.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/images/Samkhok-splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#ff6347"
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "org.samkhok",
+      "buildNumber": "2"
     },
     "android": {
+      "package": "org.samkhok",
+      "versionCode": 2,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/Samkhok.png",
         "backgroundColor": "#ffffff"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/Samkhok.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e2f52e00-0406-49a0-bd7a-bd282749ff0e"
+      }
     }
   }
 }
