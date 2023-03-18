@@ -16,6 +16,10 @@ import { TextInput } from "react-native";
 export default function Home({ navigation }) {
   //   const { colors } = useTheme();
   //   const { t } = useTranslation();
+  const author_images = {
+    "_KaoDhana" : "https://miro.medium.com/fit/c/88/88/1*25ZIxGT-YFj7cZVib4dVKA@2x.jpeg",
+    "Sitthi Sitthipol" : "https://miro.medium.com/fit/c/176/176/0*AviJaK_gmEBZzdKR",
+  };
 
   const [refreshing, setRefreshing] = useState(false);
   const [posts, setPosts] = useState([]);
@@ -106,9 +110,7 @@ export default function Home({ navigation }) {
               })()}
               // description={cleanDescription()}
               authorName={item.author}
-              authorImage={
-                "https://cdn-images-1.medium.com/fit/c/36/36/0*KC4C9CrRgdxkOGsI"
-              }
+              authorImage={author_images[item.author]}
               pubDate={item.pubDate}
               onPress={() =>
                 navigation.navigate("PostDetail", { url: item.link })

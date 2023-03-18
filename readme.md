@@ -22,6 +22,14 @@ npx create-expo-app samkhok-app
 npm start
 ```
 
+## For developers
+- Git clone & Dependencies install & run
+```
+git clone https://github.com/arc6828/samkhok-app
+cd samkhok-app
+npm install
+npm start
+```
 
 ## Dependencies
 ```bash
@@ -41,6 +49,9 @@ npm install react-native-paper
 # Web View
 npx expo install react-native-webview
 ```
+## Deployment on App Store and Google Play Store
+- App Store : https://youtu.be/LE4Mgkrf7Sk
+- Google Play Store : https://youtu.be/oBWBDaqNuws 
 
 ## Reference
 - https://expo.dev
